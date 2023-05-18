@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="950"
+        motion:motionInterpolator="linear">
+
+        <KeyFrameSet>
+            <!-- First image -->
+            <KeyAttribute
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="0"
+                motion:motionTarget="@id/iv_onboard_avatar_1" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="35"
+                motion:motionTarget="@id/iv_onboard_avatar_1" />
+
+            <!-- Second image -->
+            <KeyAttribute
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="25"
+                motion:motionTarget="@id/iv_onboard_avatar_2" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="55"
+                motion:motionTarget="@id/iv_onboard_avatar_2" />
+
+            <!-- Third image -->
+            <KeyAttribute
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="45"
+                motion:motionTarget="@id/iv_onboard_avatar_3" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="75"
+                motion:motionTarget="@id/iv_onboard_avatar_3" />
+
+            <!-- Fourth image -->
+            <KeyAttribute
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="65"
+                motion:motionTarget="@id/iv_onboard_avatar_4" />
+            <KeyAttribute
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="95"
+                motion:motionTarget="@id/iv_onboard_avatar_4" />
+        </KeyFrameSet>
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="132dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="76dp"
+            android:rotation="-14"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintEnd_toStartOf="@+id/iv_onboard_avatar_1"
+            motion:layout_constraintHorizontal_bias="0.593"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="132dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="76dp"
+            android:rotation="-14"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintEnd_toStartOf="@+id/iv_onboard_avatar_1"
+            motion:layout_constraintHorizontal_bias="0.593"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="40dp"
+            android:rotation="15"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_3"
+            android:layout_width="168dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="16dp"
+            android:rotation="15"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_onboard_avatar_2" />
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_3"
+            android:layout_width="168dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="16dp"
+            android:rotation="15"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_onboard_avatar_2" />
+        <Constraint
+            android:id="@+id/iv_onboard_avatar_4"
+            android:layout_width="wrap_content"
+            android:layout_height="215dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="-25dp"
+            android:rotation="-20"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.32"
+            motion:layout_constraintStart_toEndOf="@+id/iv_onboard_avatar_3"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end"></ConstraintSet>
+</MotionScene>

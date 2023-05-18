@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PicTale </string>
+    <string name="menu_home">Home</string>
+    <string name="menu_post">Create</string>
+    <string name="menu_logout">Log out</string>
+    <string name="onboard_get_started">Let\'s Get\nStarted</string>
+    <string name="onboard_get_started_caption">Discover and inspire stories from around the world</string>
+    <string name="join_now">Join Now</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Email Address</string>
+    <string name="email_error_message">Email is not valid</string>
+    <string name="password_hint">Password</string>
+    <string name="password_error_message">Must be at least 8 characters</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="submit">Submit</string>
+    <string name="name_hint">Name</string>
+    <string name="msg_login_success">Login Success</string>
+    <string name="msg_register_success">Register Success</string>
+    <string name="title_feed">Your Feed</string>
+    <string name="msg_login_failed">Login Failed</string>
+    <string name="msg_register_failed">Register Failed</string>
+    <string name="new_post">New Post</string>
+    <string name="hint_caption">Caption</string>
+    <string name="msg_no_image">No Image Found</string>
+    <string name="msg_post_uploaded">Post uploaded</string>
+    <string name="msg_uploading">Uploading…</string>
+    <string name="msg_something_went_wrong">Something went wrong</string>
+    <string name="msg_caption_empty">Caption is required</string>
+    <string name="description">Description</string>
+    <string name="title_create_post">Select image from</string>
+    <string name="msg_no_feed">No story at the moment</string>
+    <string name="title_detail_story">Story Detail</string>
+</resources>

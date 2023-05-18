@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PicTale </string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_post">Buat</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="onboard_get_started">Mari Mulai</string>
+    <string name="onboard_get_started_caption">Temukan dan inspirasi cerita dari seluruh dunia</string>
+    <string name="join_now">Gabung Sekarang</string>
+    <string name="already_have_account">Sudah memiliki akun?</string>
+    <string name="login">Masuk</string>
+    <string name="email_hint">Email</string>
+    <string name="email_error_message">Email tidak valid</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="password_error_message">Minimal 8 karakter</string>
+    <string name="no_account">Belum memiliki akun?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="submit">Kirim</string>
+    <string name="name_hint">Nama</string>
+    <string name="msg_login_success">Berhasil Masuk</string>
+    <string name="msg_register_success">Berhasil Mendaftar</string>
+    <string name="title_feed">Feed</string>
+    <string name="msg_login_failed">Masuk Gagal</string>
+    <string name="msg_register_failed">Pendaftaran Gagal</string>
+    <string name="new_post">Posting Baru</string>
+    <string name="hint_caption">Keterangan</string>
+    <string name="msg_no_image">Tidak Ada Gambar Ditemukan</string>
+    <string name="msg_post_uploaded">Postingan diunggah</string>
+    <string name="msg_uploading">Mengunggah…</string>
+    <string name="msg_something_went_wrong">Terjadi kesalahan</string>
+    <string name="msg_caption_empty">Caption tidak boleh kosong</string>
+    <string name="description">Deskripsi</string>
+    <string name="title_create_post">Pilih gambar dari</string>
+    <string name="msg_no_feed">Tidak ada story untuk saat ini</string>
+    <string name="title_detail_story">Detail Story</string>
+</resources>

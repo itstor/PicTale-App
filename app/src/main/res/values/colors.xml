@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black50">#80000000</color>
+    <color name="grey">#272727</color>
+    <color name="silver">#7C7C7C</color>
+    <color name="light_grey">#FFe5e5e5</color>
+    <!--    Named Colors-->
+    <color name="background_color">#FFF0F4F7</color>
+    <color name="inactive_bottom_nav_icon_color">#7C7C7C</color>
+    <color name="ripple_button_on_dark">#80747373</color>
+</resources>
