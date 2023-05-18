@@ -6,20 +6,20 @@ import com.bumptech.glide.Glide
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.itstor.pictale.R
-import com.itstor.pictale.data.remote.response.DetailStoryResponse
+import com.itstor.pictale.data.local.entity.StoryEntity
 import com.itstor.pictale.databinding.ActivityStoryDetailBinding
 import com.itstor.pictale.utils.TimeUtils
 
 class StoryDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityStoryDetailBinding
-    private lateinit var story: DetailStoryResponse
+    private lateinit var story: StoryEntity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStoryDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val extraStory = intent.getParcelableExtra<DetailStoryResponse>(EXTRA_STORY)
+        val extraStory = intent.getParcelableExtra<StoryEntity>(EXTRA_STORY)
         if (extraStory == null) {
             finish()
             return
@@ -43,7 +43,7 @@ class StoryDetailActivity : AppCompatActivity() {
 
     private fun setUpToolbar() {
         setSupportActionBar(binding.mainToolbar)
-        title = getString(R.string.title_detail_story)
+        title = getString(R.string.title_story_detail)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val materialShapeDrawable = binding.mainToolbar.background as MaterialShapeDrawable

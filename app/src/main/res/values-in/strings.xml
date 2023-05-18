@@ -31,5 +31,18 @@
     <string name="description">Deskripsi</string>
     <string name="title_create_post">Pilih gambar dari</string>
     <string name="msg_no_feed">Tidak ada story untuk saat ini</string>
-    <string name="title_detail_story">Detail Story</string>
+    <string name="menu_map">Peta</string>
+    <string name="add_your_location">Tambahkan Lokasi?</string>
+    <string name="retry">Coba lagi</string>
+    <string name="under_construction">Maaf, halaman ini masih dalam tahap pengembangan. Kami menambahkannya hanya untuk menyeimbangkan navigasi bagian bawah :)</string>
+    <string name="title_map">Peta</string>
+    <string name="msg_loading">Memuat data</string>
+    <string name="menu_favorite">Favorit</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="desc_post_detail_btn">Tombol Detil</string>
+    <string name="desc_post_photo">Foto Postingan</string>
+    <string name="title_story_detail">Detil Story</string>
+    <string name="desc_avatar_female">Avatar Perempuan</string>
+    <string name="desc_avatar_male">Avatar Laki-laki</string>
+    <string name="name_error_message">Nama tidak boleh kososng</string>
 </resources>

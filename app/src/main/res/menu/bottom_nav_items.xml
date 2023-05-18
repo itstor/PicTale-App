@@ -5,9 +5,17 @@
         android:icon="@drawable/ic_home_bottom_nav_selector"
         android:title="@string/menu_home" />
     <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map_button_nav_selector"
+        android:title="@string/menu_map" />
+    <item
         android:id="@+id/action_post"
         android:icon="@drawable/ic_add"
         android:title="@string/menu_post" />
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_heart_button_nav_selector"
+        android:title="@string/menu_favorite" />
     <item
         android:id="@+id/action_logout"
         android:icon="@drawable/ic_logout"

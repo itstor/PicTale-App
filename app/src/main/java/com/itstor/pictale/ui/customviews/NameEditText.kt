@@ -33,7 +33,7 @@ class NameEditText : TextInputEditText {
 
     private fun validateName(s: String) {
         error = if (s.isEmpty()) {
-            "Name is required"
+            context.getString(R.string.name_error_message)
         } else {
             null
         }

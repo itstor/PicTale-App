@@ -3,7 +3,6 @@ package com.itstor.pictale.ui.views.auth
 import android.graphics.Color
 import android.os.Bundle
 import android.view.WindowInsetsController
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.itstor.pictale.databinding.ActivityAuthBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -11,7 +10,6 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class AuthActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAuthBinding
-    private val viewModel: AuthViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

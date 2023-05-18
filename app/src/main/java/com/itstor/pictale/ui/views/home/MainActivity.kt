@@ -27,7 +27,11 @@ class MainActivity : AppCompatActivity() {
     private val viewModel: MainViewModel by viewModels()
 
     private val feedFragment = FeedFragment()
+    private val mapFragment = MapFragment()
+    private val favoriteFragment = FavoriteFragment()
+
     private lateinit var currentPhotoPath: String
+    private var previousSelectedItemId = R.id.action_home
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,11 +42,10 @@ class MainActivity : AppCompatActivity() {
         setUpStatusBar()
         setUpToolbar()
         listenBottomNavigation()
-        listTokenChanges()
-
+        listenTokenChanges()
     }
 
-    private fun listTokenChanges() {
+    private fun listenTokenChanges() {
         // Observe token changes. If token got cleared, then redirect to login screen
         viewModel.getAuthToken().asLiveData().observe(this) {
             if (it == null) {
@@ -77,6 +80,7 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.action_home -> {
                     switchFragment(feedFragment)
+                    previousSelectedItemId = it.itemId
                     title = getString(R.string.title_feed)
                 }
 
@@ -86,6 +90,18 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.action_post -> {
                     createPostDialog()
+                }
+
+                R.id.action_favorite -> {
+                    switchFragment(favoriteFragment)
+                    previousSelectedItemId = it.itemId
+                    title = getString(R.string.title_favorite)
+                }
+
+                R.id.action_map -> {
+                    switchFragment(mapFragment)
+                    previousSelectedItemId = it.itemId
+                    title = getString(R.string.title_map)
                 }
             }
             true
@@ -110,7 +126,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }.setOnDismissListener {
-                binding.mainBottomNav.selectedItemId = R.id.action_home
+                binding.mainBottomNav.selectedItemId = previousSelectedItemId
             }
             .show()
     }

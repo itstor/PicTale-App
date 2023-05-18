@@ -31,5 +31,18 @@
     <string name="description">Description</string>
     <string name="title_create_post">Select image from</string>
     <string name="msg_no_feed">No story at the moment</string>
-    <string name="title_detail_story">Story Detail</string>
+    <string name="menu_map">Map</string>
+    <string name="title_map">Map</string>
+    <string name="add_your_location">Add your location?</string>
+    <string name="msg_loading">Loading data</string>
+    <string name="retry">Retry</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="title_favorite">Your Favorite</string>
+    <string name="under_construction">Sorry, this page is still a work in progress. We just added it to balance out the bottom nav :)</string>
+    <string name="desc_post_detail_btn">Detail Button</string>
+    <string name="desc_post_photo">Post Photo</string>
+    <string name="title_story_detail">Story Detail</string>
+    <string name="desc_avatar_female">Avatar Female</string>
+    <string name="desc_avatar_male">Avatar Male</string>
+    <string name="name_error_message">Name is required</string>
 </resources>
